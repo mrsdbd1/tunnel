@@ -40,7 +40,7 @@ add_tunnel() {
   if grep -q "Allocated port" "$TMPFILE"; then
     REMOTE_PORT=$(grep "Allocated port" "$TMPFILE" | grep -oP '\d{4,5}' | head -n1)
     echo "$LOCAL_PORT:$REMOTE_PORT:$SSH_PID" >> "$DB_FILE"
-    echo -e "✅ ${GRN}Tunnel created:${RST} localhost:${YEL}$LOCAL_PORT${RST} ➜ ${CYN}$SERVER:$REMOTE_PORT${RST} (pid $SSH_PID)"
+    echo -e "✅ ${GRN}Tunnel created:${RST} localhost:${YEL}$LOCAL_PORT${RST} ➜ tunnel.lpnodes.com:$REMOTE_PORT${RST} (pid $SSH_PID)"
   else
     echo -e "❌ ${RED}Tunnel failed!${RST} reason:"
     grep -v "^Warning:" "$TMPFILE"
