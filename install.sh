@@ -2,7 +2,6 @@
 set -e
 
 echo "🔧 Installing dependencies..."
-apt update -y
 apt install -y ssh sshpass
 
 echo "📂 Installing port tool..."
