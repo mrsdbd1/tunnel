@@ -2,9 +2,9 @@
 
 # ========= CONFIG =========
 DB_FILE="/tmp/port_tunnels.db"
-SERVER="tunnel.lpnodes.com"
-USER="tunnel"
-PASS="Lw-T72q)L735Rwz+Iv"
+SERVER="163.227.238.115"
+USER="tunnel1"
+PASS="vps"
 # ==========================
 
 mkdir -p /tmp
