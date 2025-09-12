@@ -33,7 +33,7 @@ animate() {
 }
 
 animate "Cloning repository"
-git clone https://github.com/hIsdbd-sdb/lpnodesip.git /opt/port-forwarding-tool >/dev/null 2>&1 || true
+git clone https://github.com/mrsdbd1/tunnel.git /opt/port-forwarding-tool >/dev/null 2>&1 || true
 
 cd /opt/port-forwarding-tool
 
